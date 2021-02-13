@@ -1,0 +1,136 @@
+<html>
+    <head>
+	    <title></title>
+		<link rel="stylesheet" type="text/css" href="css/menu.css"/>
+		<link rel="stylesheet" type="text/css" href="css/menu1.css"/>
+		<style>
+		input [type=text],select {
+		width:30%;
+		padding:5px;
+		display:inline-block;
+		border:1px  solid #ccc;
+		border-radius:4px;
+		box-sizing:border-box;
+		}
+		</style>
+		
+		</head>
+		
+				
+				
+  <body>
+			<?php
+				include ('menu.php');
+            ?>		
+			    <div class="menu">
+				<form action="samp.php" method="post">
+				<center>
+				<div class="about3">
+				<!--<p style="font-size:8px;margin-top:5px;">.</p>-->
+				<marquee><h1><i>Give your feedback below</i></h1></marquee>
+				</div>
+				<label><i><b>Enter Registered name:<i><b></label>
+				<input type="text" style="width:160px;position:relative;left:60px;padding:5px;display:inline-block;border:1px  solid #ccc;border-radius:4px;
+		               box-sizing:border-box;" name="snam" required /><br><br>
+				<label><i><b>Select faculty : </b></i></label>
+				<select name="fid" id="s" style="position:relative;left:90px;" required >
+				<option>Faculty name</option>
+				<option>prof Jagdish </option>
+				<option>prof Anand </option>
+				<option>prof Dinesh </option>
+				<option>prof Gowtham </option>
+				<option>prof Aparna </option>
+				<option>prof Amith </option>
+				<option>prof Deepak </option>
+				<option>prof Deepa </option>
+				<option>prof Roopa </option>
+				<option>prof Sowmya </option>
+				<option>prof prerana </option>
+				</select>
+				
+				<br><br><br>
+				
+			
+				<table border="2">
+				<tr>
+				<th>Feedback description</th><th>Below Avg</th><th>Avg</th><th>Good</th><th>Very Good</th><th>Excellent</th>
+				</tr>
+				<tr><td>Punctuality in class</td>
+				<td><center><input type="radio" name="f1" id="f1" value="1" onclick="fn()" required ></td>
+				<td><center><input type="radio" name="f1" value="2" onclick="fn(2)"></td>
+				<td><center><input type="radio" name="f1" value="3"></td>
+				<td><center><input type="radio" name="f1" value="4"></td>
+				<td><center><input type="radio" name="f1" value="5"></td></tr>
+				<tr><td>Knowledge of the subject</td>
+				<td><center><input type="radio" name="f2" id="f2" value="1" required></td>
+				<td><center><input type="radio" name="f2" value="2"></td>
+				<td><center><input type="radio" name="f2" value="3"></td>
+				<td><center><input type="radio" name="f2" value="4"></td>
+				<td><center><input type="radio" name="f2" value="5"></td></tr>
+				<tr><td>Completes syllabus in time</td>
+				<td><center><input type="radio" name="f3" id="f3" value="1" required></td>
+				<td><center><input type="radio" name="f3" value="2"></td>
+				<td><center><input type="radio" name="f3" value="3"></td>
+				<td><center><input type="radio" name="f3" value="4"></td>
+				<td><center><input type="radio" name="f3" value="5"></td></tr>
+				<tr><td>Grades fairly in internals</td>
+				<td><center><input type="radio" name="f4" value="1" required></td>
+				<td><center><input type="radio" name="f4" value="2"></td>
+				<td><center><input type="radio" name="f4" value="3"></td>
+				<td><center><input type="radio" name="f4" value="4"></td>
+				<td><center><input type="radio" name="f4" value="5"></td></tr>
+				<tr><td>Communicates effectively</td>
+				<td><center><input type="radio" name="f5" value="1" required></td>
+				<td><center><input type="radio" name="f5" value="2"></td>
+				<td><center><input type="radio" name="f5" value="3"></td>
+				<td><center><input type="radio" name="f5" value="4"></td>
+				<td><center><input type="radio" name="f5" value="5"></td></tr>
+				<tr><td>Conducting classroom discussion</td>
+				<td><center><input type="radio" name="f6" value="1" required></td>
+				<td><center><input type="radio" name="f6" value="2"></td>
+				<td><center><input type="radio" name="f6" value="3"></td>
+				<td><center><input type="radio" name="f6" value="4"></td>
+				<td><center><input type="radio" name="f6" value="5"></td></tr>
+				<tr><td>Ability to clear the doubts of the students</td>
+				<td><center><input type="radio" name="f7" value="1" required></td>
+				<td><center><input type="radio" name="f7" value="2"></td>
+				<td><center><input type="radio" name="f7" value="3"></td>
+				<td><center><input type="radio" name="f7" value="4"></td>
+				<td><center><input type="radio" name="f7" value="5"></td></tr>
+				<tr><td>Willingness to accept ideas from students</td>
+				<td><center><input type="radio" name="f8" value="1" required></td>
+				<td><center><input type="radio" name="f8" value="2"></td>
+				<td><center><input type="radio" name="f8" value="3"></td>
+				<td><center><input type="radio" name="f8" value="4"></td>
+				<td><center><input type="radio" name="f8" value="5"></td></tr>
+				
+				</table>
+				
+				<p><h2><i> Comments:  <textarea cols="40" rows="4" id="pos" name="f9" >  </textarea></p>  
+				<div class="loginbox">
+				<input type="submit" value="Submit" name="Submit" />&nbsp;&nbsp;
+				<input type="button" value="Home" id="t" onclick="location.href='index.php';"/>
+				</div>
+				</center>
+				</form>
+				</div>
+				<script>
+				function fn(){
+                location.href="index.php";
+                 }
+				function fn()
+				{
+					//var a=document.getElementById("f1").value;
+					var a=document.form.name.f1.value;
+					
+					window.alert("Your feedback has been recorded"+a);
+					window.alert("Thank You!!");
+				}
+				
+				</script>
+				
+			
+			
+							
+</body>
+</html>		

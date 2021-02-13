@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Login page</title>
+<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+<div class="loginbox">
+<img src="avatar.png" class="avatar">
+<h1>Login Here</h1>
+<form action="login.php" method="post">
+<p>Username</p>
+<input type="text" name="username" id="un" placeholder="Enter Username" required>
+<p>Password</p>
+<input type="password" name="password" placeholder="Enter Password" required>
+<input type="submit" name="submit" value="Login"  onclick="fn()">
+<a href="reg.html">No account?Signup</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="hodlogin.html">Hod Login</a>
+
+</form>
+
+
+</div>
+<script type="text/javascript">
+
+function fn()
+{
+if(nam=="")
+{
+window.alert("please enter the namefield");
+return false;
+}
+else
+{
+var pattern=/[A-Z][a-z]+[\s][A-Z][\s][A-Z]/;
+if(!pattern.test(nam))
+{
+window.alert("enter a valid name");
+return false;
+}
+}
+if(pas=="")
+{
+alert("please enter password");
+document.form.s_pw.focus();
+return false;
+}
+else
+{
+pattern=/^(?=.*?[a-z])(?=.*?{0-9}(?=.*?[@!#$%^&*(),_+-+="']).{8,15}$/;
+if(!(pattern.test(pas)))
+{
+window.alert("please enter strong password");
+return false;
+}
+}
+}
+</script>
+</body>
+</html>

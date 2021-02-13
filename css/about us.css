@@ -1,0 +1,32 @@
+
+.about1
+{
+height:469px;
+width:1280px;
+border:9px solid  #D1C6B2;
+background-color:#E3D8C2;
+margin-top:30px;
+margin-left:15px;
+margin-right:50px;
+}
+.about2
+{
+height:500px;
+width:400px;
+
+
+margin-top:10px;
+margin-left:45px;
+margin-right:50px;
+float:left
+}
+.about3
+{
+height:100px;
+width:260px;
+margin-top:10px;
+margin-left:5px;
+margin-right:10px;
+float:right;
+ font-family:Vladimir Script;
+}
